@@ -5,6 +5,7 @@ import SearchHistory from './Components/SearchHistory';
 
 export default class App extends React.Component {
   render() {
+    console.log('hi')
     return (
       <div className='container'>
         <div className='jumbotron'>
