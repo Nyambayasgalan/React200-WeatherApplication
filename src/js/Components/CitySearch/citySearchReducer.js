@@ -37,11 +37,9 @@ export default function CitySearchReducer(state = defaultState, action) {
         'temp_min': payload.data.main.temp_min,
         'temp_max': payload.data.main.temp_max,
         'windspeed': payload.data.wind.speed,
-        // 'history': [...state.history, {
-        //   'city': payload.data.name,
-        //   'date': moment().format('MMMM Do YYYY'),
-        //   'time': moment().format('h:mm:ss a')
-        // }]
+        'history': [...state.history, {
+          'city': payload.data.name,
+        }]
 
       };
     }

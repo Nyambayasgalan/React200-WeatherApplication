@@ -22,7 +22,6 @@ export default class CityInformation extends React.Component {
 
     return (
 
-      <div className='col-md-8'>
         <div className='card border-info'>
           <div className='card'>
             <div className='card-header' id='header'>City Information</div>
@@ -85,7 +84,7 @@ export default class CityInformation extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+
     );
   }
 }
