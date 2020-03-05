@@ -11,13 +11,13 @@ export default class SearchHistory extends React.Component {
     const { history } = this.props;
 
     return (
-      <div className='col-md-6'>
-        <div className="card border-info">
-          <div className="card-header" id='header'>Search History</div>
-          <div className="card-body">
-            <ul className="list-group list-group-flush full-width">
+      <div className='col-md-4'>
+        <div className='card border-info'>
+          <div className='card-header' id='header'>Search History</div>
+          <div className='card-body'>
+            <ul className='list-group list-group-flush full-width'>
               {history.map(search => (
-                <li className="list-group-item" key={search.time}>
+                <li className='list-group-item' key={search.time}>
                   {search.city}
                   <p className='text-right'>{search.date}<br />{search.time}</p>
                 </li>
@@ -26,7 +26,6 @@ export default class SearchHistory extends React.Component {
           </div>
         </div>
       </div>
-
     );
   }
 }
